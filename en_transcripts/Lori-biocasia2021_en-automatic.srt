@@ -1,3020 +1,1449 @@
 1
-00:00:09,360 --> 00:00:14,240
-hello everyone i hope you're enjoying
+00:00:09,360 --> 00:00:15,360
+hello everyone i hope you're enjoying bioc asia 
+2021 i'd like to thank the conference organizers  
 
 2
-00:00:11,440 --> 00:00:16,080
-bioc asia 2021 i'd like to thank the
+00:00:15,360 --> 00:00:19,920
+for inviting me to speak today and while this 
+isn't live i'm very excited to be giving my first  
 
 3
-00:00:14,240 --> 00:00:18,160
-conference organizers for inviting me to
+00:00:19,920 --> 00:00:26,400
+keynote talk ever my talk today is on bioconductor 
+what bioconductor is and how the core team helps  
 
 4
-00:00:16,080 --> 00:00:19,920
-speak today and while this isn't live
+00:00:26,400 --> 00:00:32,240
+facilitate the project so the first thing 
+that surprised me when i started going to more  
 
 5
-00:00:18,160 --> 00:00:21,439
-i'm very excited to be giving my first
+00:00:32,240 --> 00:00:37,200
+general r and computing conferences was the 
+misconception that bioconductor was a single  
 
 6
-00:00:19,920 --> 00:00:24,000
-keynote talk ever
+00:00:37,200 --> 00:00:43,600
+r package and the bioconductor project is 
+much larger than a single package bioconductor  
 
 7
-00:00:21,439 --> 00:00:26,080
-my talk today is on bioconductor what
+00:00:43,600 --> 00:00:50,000
+is an open source and open development r 
+package repository system that focuses on  
 
 8
-00:00:24,000 --> 00:00:29,199
-bioconductor is and how the core team
+00:00:50,000 --> 00:00:56,480
+analysis comprehension and visualization of 
+genetic and genomic data there are actually  
 
 9
-00:00:26,080 --> 00:00:30,720
-helps facilitate the project
+00:00:56,480 --> 00:01:01,680
+currently over 2000 software packages in 
+addition to specialized data experiment  
 
 10
-00:00:29,199 --> 00:00:33,200
-so the first thing that surprised me
+00:01:01,680 --> 00:01:05,840
+annotation and workflow packages that are 
+available through the bioconductor interface  
 
 11
-00:00:30,720 --> 00:00:34,960
-when i started going to more general r
+00:01:07,200 --> 00:01:12,080
+but bioconductor is more than just a package 
+repository system it really is a well-developed  
 
 12
-00:00:33,200 --> 00:00:36,719
-and computing conferences was the
+00:01:12,080 --> 00:01:17,040
+organization and there are many people involved 
+with shaping the direction of the project  
 
 13
-00:00:34,960 --> 00:00:39,280
-misconception that bioconductor was a
+00:01:17,040 --> 00:01:21,920
+currently there are three main advisory boards 
+the scientific technical and community boards  
 
 14
-00:00:36,719 --> 00:00:41,840
-single r package and the bioconductor
+00:01:21,920 --> 00:01:26,880
+the scientific advisory board is an invitation 
+only board that provides external guidance  
 
 15
-00:00:39,280 --> 00:00:44,640
-project is much larger than a single
+00:01:26,880 --> 00:01:32,320
+and oversight on the scientific direction of 
+the project the technical and community advisory  
 
 16
-00:00:41,840 --> 00:00:46,640
-package bioconductor is an open source
+00:01:32,320 --> 00:01:36,320
+boards however have open public elections 
+every spring for inclusion on the board  
 
 17
-00:00:44,640 --> 00:00:50,000
-and open development r package
+00:01:36,960 --> 00:01:41,440
+the technical advisory board advises on 
+project and package level infrastructure  
 
 18
-00:00:46,640 --> 00:00:53,039
-repository system that focuses on
+00:01:41,440 --> 00:01:46,880
+while the community advisory board is really 
+dedicated to developing enhancing and diversifying  
 
 19
-00:00:50,000 --> 00:00:55,440
-analysis comprehension and visualization
+00:01:46,880 --> 00:01:52,560
+the bioconductor community anyone can run for a 
+position on these two boards for the technical  
 
 20
-00:00:53,039 --> 00:00:58,320
-of genetic and genomic data
+00:01:52,560 --> 00:01:56,720
+board it may be useful to have some finer 
+knowledge of bioconductor and programming  
 
 21
-00:00:55,440 --> 00:01:00,079
-there are actually currently over 2000
+00:01:56,720 --> 00:02:02,400
+or a specialized scientific technology background 
+but the community board especially really wants  
 
 22
-00:00:58,320 --> 00:01:02,320
-software packages in addition to
+00:02:02,400 --> 00:02:08,160
+to try and be as diverse as possible and aims 
+for a mix of races ethnicity education level  
 
 23
-00:01:00,079 --> 00:01:04,239
-specialized data experiment annotation
+00:02:08,160 --> 00:02:12,480
+and bioconductor experience so if you're 
+interested look for a call for applications  
 
 24
-00:01:02,320 --> 00:01:07,200
-and workflow packages that are available
+00:02:12,480 --> 00:02:16,080
+on the bioconductor support site and 
+community slack channel in early spring
 
 25
-00:01:04,239 --> 00:01:09,200
-through the bioconductor interface
+00:02:18,320 --> 00:02:23,440
+so thinking back on how this started that 
+bioconductor is more than just a single package  
 
 26
-00:01:07,200 --> 00:01:11,360
-but bioconductor is more than just a
+00:02:23,440 --> 00:02:28,960
+it's a package repository and an organization 
+but even more importantly than that probably most  
 
 27
-00:01:09,200 --> 00:01:13,600
-package repository system it really is a
+00:02:28,960 --> 00:02:34,240
+important it's a community so bioconductor 
+really aims at trying to provide resources  
 
 28
-00:01:11,360 --> 00:01:15,360
-well-developed organization and there
+00:02:34,240 --> 00:02:39,040
+and infrastructure to link experienced 
+package maintainers developers and users  
 
 29
-00:01:13,600 --> 00:01:17,439
-are many people involved with shaping
+00:02:39,040 --> 00:02:44,000
+with the inexperience to foster this 
+collaborative and welcoming community of  
 
 30
-00:01:15,360 --> 00:01:19,360
-the direction of the project currently
+00:02:44,000 --> 00:02:49,520
+our bioconductor users so how and where does 
+this community connect well there are a couple  
 
 31
-00:01:17,439 --> 00:01:21,119
-there are three main advisory boards the
+00:02:49,520 --> 00:02:55,760
+different places most notably the bioconductor 
+support site the community slack channels and  
 
 32
-00:01:19,360 --> 00:01:23,680
-scientific technical and community
+00:02:55,760 --> 00:03:00,960
+numerous conference workshops and training events 
+that happen through the year and also a newly  
 
 33
-00:01:21,119 --> 00:01:25,759
-boards the scientific advisory board is
+00:03:00,960 --> 00:03:06,240
+developed mentoring chip program and i can just 
+take you briefly through each of those right now
 
 34
-00:01:23,680 --> 00:01:27,920
-an invitation only board that provides
+00:03:08,320 --> 00:03:12,880
+the bioconductor support site is the first 
+place many users go to ask questions and get  
 
 35
-00:01:25,759 --> 00:01:30,400
-external guidance and oversight on the
+00:03:12,880 --> 00:03:18,000
+advice on analysis or to troubleshoot using 
+bioconductor packages this support site is  
 
 36
-00:01:27,920 --> 00:01:32,320
-scientific direction of the project
+00:03:18,000 --> 00:03:22,480
+specialized to bioconductor package questions 
+and every maintainer that submits a package to  
 
 37
-00:01:30,400 --> 00:01:34,000
-the technical and community advisory
+00:03:22,480 --> 00:03:28,080
+bioconductor is required to sign up so that if an 
+ask question gets tagged with their package name  
 
 38
-00:01:32,320 --> 00:01:35,920
-boards however have open public
+00:03:28,080 --> 00:03:32,880
+they would be notified there are thousands of 
+users on here and it can be a great resource  
 
 39
-00:01:34,000 --> 00:01:36,960
-elections every spring for inclusion on
+00:03:32,880 --> 00:03:39,120
+to tap into community knowledge and experience so 
+you can search by clicking on a package tag or you  
 
 40
-00:01:35,920 --> 00:01:39,200
-the board
+00:03:39,120 --> 00:03:44,560
+could go to the tags tab and search for a package 
+to see what already existing posts and questions  
 
 41
-00:01:36,960 --> 00:01:41,439
-the technical advisory board advises on
+00:03:45,120 --> 00:03:49,120
+are available if you don't see anything 
+relevant to what you need you can always  
 
 42
-00:01:39,200 --> 00:01:43,439
-project and package level infrastructure
+00:03:49,120 --> 00:03:54,640
+post a new question by clicking on the ask a 
+questions tab make sure to have an informative  
 
 43
-00:01:41,439 --> 00:01:45,920
-while the community advisory board is
+00:03:54,640 --> 00:03:59,840
+title and be sure to tag any relevant packages 
+that the question relates to in the post tags  
 
 44
-00:01:43,439 --> 00:01:47,600
-really dedicated to developing enhancing
+00:04:00,720 --> 00:04:07,360
+the body uses markdown or plain text or html if 
+you're having issues or errors running code be  
 
 45
-00:01:45,920 --> 00:01:48,880
-and diversifying the bioconductor
+00:04:07,360 --> 00:04:12,640
+sure to post as much of the code example in the 
+code section and always include the platform and  
 
 46
-00:01:47,600 --> 00:01:50,720
-community
+00:04:12,640 --> 00:04:17,280
+version of r and bioconductor you are using 
+so we can tailor the responses appropriately  
 
 47
-00:01:48,880 --> 00:01:53,040
-anyone can run for a position on these
+00:04:17,920 --> 00:04:23,040
+the bioconductor team also uses the news feature 
+to post important announcements for releases  
 
 48
-00:01:50,720 --> 00:01:54,799
-two boards for the technical board it
+00:04:23,040 --> 00:04:27,840
+packages conferences elections 
+and other such news events
 
 49
-00:01:53,040 --> 00:01:56,079
-may be useful to have some finer
+00:04:29,840 --> 00:04:34,560
+there's also the bioconductor community slack 
+channel and i really encourage everyone to join  
 
 50
-00:01:54,799 --> 00:01:58,159
-knowledge of bioconductor and
+00:04:34,560 --> 00:04:39,520
+the channel as it is great for conversation there 
+are a number of specialized channels that may be  
 
 51
-00:01:56,079 --> 00:02:00,399
-programming or a specialized scientific
+00:04:39,520 --> 00:04:45,920
+useful for a very particular discussion like 
+microbiome metabolomics a proteomics channel  
 
 52
-00:01:58,159 --> 00:02:02,880
-technology background but the community
+00:04:46,560 --> 00:04:50,560
+we also have channels to ask about core 
+infrastructure pieces that we'll discuss a little  
 
 53
-00:02:00,399 --> 00:02:05,280
-board especially really wants to try and
+00:04:50,560 --> 00:04:56,080
+bit later on but channels like the bioc builds 
+for build system questions or biosee hubs for  
 
 54
-00:02:02,880 --> 00:02:08,160
-be as diverse as possible and aims for a
+00:04:56,080 --> 00:05:03,280
+questions unlike experiment hub annotation hub or 
+bioc file cache there are a number of conferences  
 
 55
-00:02:05,280 --> 00:02:10,239
-mix of races ethnicity education level
+00:05:03,280 --> 00:05:08,080
+workshops and training events throughout the 
+year there's a bioconductor event calendar  
 
 56
-00:02:08,160 --> 00:02:11,840
-and bioconductor experience so if you're
+00:05:08,080 --> 00:05:13,760
+off the main website that anyone can submit 
+bioconductor related events to advertise anyone  
 
 57
-00:02:10,239 --> 00:02:13,760
-interested look for a call for
+00:05:13,760 --> 00:05:21,520
+is welcome to submit event for inclusion on the 
+page either by emailing events at bioconductor.org  
 
 58
-00:02:11,840 --> 00:02:15,440
-applications on the bioconductor support
+00:05:21,520 --> 00:05:27,360
+or we're working on a forum version that should be 
+available soon minimum requirements for an event  
 
 59
-00:02:13,760 --> 00:02:18,080
-site and community slack channel in
+00:05:27,360 --> 00:05:32,240
+is a relevance to bioconductor and a willingness 
+to adhere to the bioconductor code of conduct  
 
 60
-00:02:15,440 --> 00:02:18,080
-early spring
+00:05:33,120 --> 00:05:38,320
+conferences are always a good time and a great way 
+to meet other members of the community and network  
 
 61
-00:02:18,319 --> 00:02:22,319
-so thinking back on how this started
+00:05:38,320 --> 00:05:43,120
+hopefully you are all enjoying yourselves here 
+at bioc asia which has become an annual event  
 
 62
-00:02:20,560 --> 00:02:24,879
-that bioconductor is more than just a
+00:05:43,680 --> 00:05:49,440
+there's also the annual maine bios conference 
+normally held in the united states in late summer  
 
 63
-00:02:22,319 --> 00:02:27,360
-single package it's a package repository
+00:05:50,160 --> 00:05:56,560
+and the annual eurobiose conference and the 
+next currently one scheduled is for march 2022  
 
 64
-00:02:24,879 --> 00:02:28,959
-and an organization but even more
+00:05:57,280 --> 00:06:02,800
+in recent years we are excited to see initiatives 
+in other countries as well that bioconductor is  
 
 65
-00:02:27,360 --> 00:02:30,879
-importantly than that probably most
+00:06:02,800 --> 00:06:08,800
+glad to send representatives and be a part of the 
+community of bioinformatics software developers in  
 
 66
-00:02:28,959 --> 00:02:32,959
-important it's a community so
+00:06:08,800 --> 00:06:15,200
+mexico and latin america have started organizing 
+yearly week-long workshops and various conference  
 
 67
-00:02:30,879 --> 00:02:35,440
-bioconductor really aims at trying to
+00:06:15,200 --> 00:06:19,520
+and workshops throughout the year to aid in 
+development of the spanish-speaking armed  
 
 68
-00:02:32,959 --> 00:02:37,599
-provide resources and infrastructure to
+00:06:19,520 --> 00:06:28,160
+bioconnector community and the h3a bionet and h3a 
+africa launched a series of workshops and webinars  
 
 69
-00:02:35,440 --> 00:02:39,360
-link experienced package maintainers
+00:06:28,160 --> 00:06:33,840
+to help advance the african coding and research 
+communities which bioconductor took part in also  
 
 70
-00:02:37,599 --> 00:02:41,440
-developers and users with the
+00:06:34,640 --> 00:06:39,120
+these again are just a few of the many 
+workshops webinars and training opportunities  
 
 71
-00:02:39,360 --> 00:02:44,000
-inexperience to foster this
+00:06:39,120 --> 00:06:43,760
+launched around the world throughout the 
+year and we are really excited to see  
 
 72
-00:02:41,440 --> 00:02:45,920
-collaborative and welcoming community of
+00:06:43,760 --> 00:06:49,360
+that the bioconnector community is growing and 
+that we can be a part of research worldwide
 
 73
-00:02:44,000 --> 00:02:47,760
-our bioconductor users
+00:06:51,920 --> 00:06:55,920
+so those are some great resources to connect to 
+the community but now i want to take it back to  
 
 74
-00:02:45,920 --> 00:02:49,519
-so how and where does this community
+00:06:55,920 --> 00:07:00,640
+this slide on organization just for a second 
+because we skipped over the last entry the  
 
 75
-00:02:47,760 --> 00:02:51,760
-connect well there are a couple
+00:07:00,640 --> 00:07:06,000
+core team the core team plays a vital role in 
+the functionality of the project it's a small  
 
 76
-00:02:49,519 --> 00:02:54,160
-different places most notably the
+00:07:06,000 --> 00:07:11,040
+dedicated group of developers that help develop 
+maintain and enhance core packages and project  
 
 77
-00:02:51,760 --> 00:02:57,120
-bioconductor support site the community
+00:07:11,040 --> 00:07:16,320
+level infrastructure so what does that really mean 
+i get the feeling that most people think that the  
 
 78
-00:02:54,160 --> 00:02:58,800
-slack channels and numerous conference
+00:07:16,320 --> 00:07:21,440
+core team only takes care of core packages 
+and package maintenance but we really do so  
 
 79
-00:02:57,120 --> 00:03:00,959
-workshops and training events that
+00:07:21,440 --> 00:07:27,120
+much more than that we talked about bioconductor 
+being a project there's a lot of infrastructure  
 
 80
-00:02:58,800 --> 00:03:03,440
-happen through the year and also a newly
+00:07:27,120 --> 00:07:31,520
+pieces that are in place to make the project 
+function so thinking about the resources we  
 
 81
-00:03:00,959 --> 00:03:04,959
-developed mentoring chip program and i
+00:07:31,520 --> 00:07:35,920
+just went over what core infrastructure 
+is involved that the core team maintains
 
 82
-00:03:03,440 --> 00:03:08,239
-can just take you briefly through each
+00:07:38,320 --> 00:07:43,840
+so first there's the main website bioconductor.org 
+the core team is responsible for updates and  
 
 83
-00:03:04,959 --> 00:03:08,239
-of those right now
+00:07:43,840 --> 00:07:48,080
+website upkeep there's an entire code 
+base for the website and the website is  
 
 84
-00:03:08,319 --> 00:03:12,159
-the bioconductor support site is the
+00:07:48,080 --> 00:07:52,640
+regenerated about every 20 minutes to make sure 
+that there is constant up-to-date information  
 
 85
-00:03:10,159 --> 00:03:14,319
-first place many users go to ask
+00:07:53,280 --> 00:07:58,240
+similarly there's a code base for the support site 
+website we thankfully have support and help from  
 
 86
-00:03:12,159 --> 00:03:15,920
-questions and get advice on analysis or
+00:07:58,240 --> 00:08:03,280
+the biostars that our support site is modeled 
+after and in particular an attay that assists  
 
 87
-00:03:14,319 --> 00:03:17,040
-to troubleshoot using bioconductor
+00:08:03,280 --> 00:08:08,080
+but we still have core team involvement 
+in the upkeep and maintenance of that site  
 
 88
-00:03:15,920 --> 00:03:18,640
-packages
+00:08:08,800 --> 00:08:12,000
+there's also monitoring and answering 
+questions that appear on the community  
 
 89
-00:03:17,040 --> 00:03:20,720
-this support site is specialized to
+00:08:12,000 --> 00:08:17,360
+slack channels many times resulting in follow-up 
+and investigation of issues comments and concerns  
 
 90
-00:03:18,640 --> 00:03:22,480
-bioconductor package questions and every
+00:08:18,160 --> 00:08:22,480
+and many core team members participate in 
+presenting material for conferences and workshops  
 
 91
-00:03:20,720 --> 00:03:24,879
-maintainer that submits a package to
+00:08:23,040 --> 00:08:28,080
+there's also normally components of the conference 
+like specialized web pages systems for hosting  
 
 92
-00:03:22,480 --> 00:03:27,120
-bioconductor is required to sign up so
+00:08:28,080 --> 00:08:33,760
+workshops and having computer environments for 
+participants that the core team also helps manage  
 
 93
-00:03:24,879 --> 00:03:28,480
-that if an ask question gets tagged with
+00:08:33,760 --> 00:08:40,160
+and facilitate so hopefully you can already see 
+the importance of this back-end infrastructure so  
 
 94
-00:03:27,120 --> 00:03:29,599
-their package name they would be
+00:08:40,160 --> 00:08:46,000
+continuing on i want to think about bioconductor 
+from two perspectives a user and a developer  
 
 95
-00:03:28,480 --> 00:03:31,599
-notified
+00:08:46,000 --> 00:08:50,160
+and along the way we'll discuss additional 
+important project infrastructure that the  
 
 96
-00:03:29,599 --> 00:03:33,519
-there are thousands of users on here and
+00:08:50,160 --> 00:08:55,520
+core team helps develop maintain and enhance to 
+try to provide a good experience to the community
 
 97
-00:03:31,599 --> 00:03:35,760
-it can be a great resource to tap into
+00:08:58,400 --> 00:09:02,960
+so thinking about a user how does a user 
+interact with bioconductor traditionally  
 
 98
-00:03:33,519 --> 00:03:37,680
-community knowledge and experience
+00:09:02,960 --> 00:09:08,000
+i think most users were using our terminal 
+or rstudio which is still highly popular and  
 
 99
-00:03:35,760 --> 00:03:40,480
-so you can search by clicking on a
+00:09:08,000 --> 00:09:13,200
+widely utilized but there are also newer available 
+technologies and projects like using docker images  
 
 100
-00:03:37,680 --> 00:03:42,879
-package tag or you could go to the tags
+00:09:13,200 --> 00:09:17,360
+or cloud-based initiatives like the anvil 
+project that allow a different user experience  
 
 101
-00:03:40,480 --> 00:03:45,120
-tab and search for a package to see what
+00:09:17,920 --> 00:09:23,040
+for our terminal and rstudio users there's a 
+cram package bioc manager that is downloaded  
 
 102
-00:03:42,879 --> 00:03:46,480
-already existing posts and questions
+00:09:23,040 --> 00:09:28,640
+installed from cran and provides access to all 
+packages in bioconductor and crayon repositories  
 
 103
-00:03:45,120 --> 00:03:48,000
-are available
+00:09:28,640 --> 00:09:35,600
+the anvil which stands for analysis visualization 
+and informative lab space is an nhgri project  
 
 104
-00:03:46,480 --> 00:03:49,760
-if you don't see anything relevant to
+00:09:35,600 --> 00:09:40,320
+it provides a secure cloud-based computing 
+environment for analysis i will not go into  
 
 105
-00:03:48,000 --> 00:03:51,920
-what you need you can always post a new
+00:09:40,320 --> 00:09:45,440
+detail here about anvil and docker images but i 
+encourage everyone to attend natashas talk where  
 
 106
-00:03:49,760 --> 00:03:53,280
-question by clicking on the ask a
+00:09:45,440 --> 00:09:49,920
+i believe some of these concepts and resources 
+will be covered i will mention that the anvil  
 
 107
-00:03:51,920 --> 00:03:55,040
-questions tab
+00:09:49,920 --> 00:09:53,920
+bioconductor package provides a different 
+install function designed specifically for  
 
 108
-00:03:53,280 --> 00:03:57,280
-make sure to have an informative title
+00:09:53,920 --> 00:10:00,000
+use with the bioconductor docker images and the 
+anvil computing space that can provide fast binary  
 
 109
-00:03:55,040 --> 00:03:59,360
-and be sure to tag any relevant packages
+00:10:00,000 --> 00:10:05,680
+package installation why is this significant well 
+some packages require compilation which can take  
 
 110
-00:03:57,280 --> 00:04:00,720
-that the question relates to in the post
+00:10:05,680 --> 00:10:11,760
+several seconds package binaries are pre-compiled 
+allowing for a near instantaneous installation the  
 
 111
-00:03:59,360 --> 00:04:03,519
-tags
+00:10:11,760 --> 00:10:16,640
+limitation of binaries is that package binaries 
+are specific to the system configuration to which  
 
 112
-00:04:00,720 --> 00:04:06,239
-the body uses markdown or plain text or
+00:10:16,640 --> 00:10:19,840
+they were generated which is why they're 
+only available for use with the docker
 
 113
-00:04:03,519 --> 00:04:08,799
-html if you're having issues or errors
+00:10:23,600 --> 00:10:29,280
+another important concept for users especially 
+new users is how to find packages of interest  
 
 114
-00:04:06,239 --> 00:04:11,200
-running code be sure to post as much of
+00:10:29,280 --> 00:10:34,000
+in bios manager there's a function available 
+that shows a listing of all available packages  
 
 115
-00:04:08,799 --> 00:04:12,959
-the code example in the code section and
+00:10:34,000 --> 00:10:39,680
+or you could use a search term to find packages 
+but that assumes some a priori knowledge the  
 
 116
-00:04:11,200 --> 00:04:15,360
-always include the platform and version
+00:10:39,680 --> 00:10:44,800
+bioc views page and package landing pages 
+can be really useful for finding packages  
 
 117
-00:04:12,959 --> 00:04:16,560
-of r and bioconductor you are using so
+00:10:45,520 --> 00:10:50,640
+off the bioconductor.org home page there's 
+a link to available software packages  
 
 118
-00:04:15,360 --> 00:04:17,919
-we can tailor the responses
+00:10:50,640 --> 00:10:56,400
+this takes you to what we call our bioseed views 
+page and includes software annotation experiment  
 
 119
-00:04:16,560 --> 00:04:20,239
-appropriately
+00:10:56,400 --> 00:11:01,920
+and workflow packages books are coming soon 
+you can either search for terms of interest  
 
 120
-00:04:17,919 --> 00:04:21,840
-the bioconductor team also uses the news
+00:11:01,920 --> 00:11:07,600
+like single cell or proteomics to get a list 
+of packages or if you know a package name  
 
 121
-00:04:20,239 --> 00:04:24,560
-feature to post important announcements
+00:11:07,600 --> 00:11:11,920
+you can search for it specifically like 
+genomic ranges or summarized experiment  
 
 122
-00:04:21,840 --> 00:04:29,720
-for releases packages conferences
+00:11:12,720 --> 00:11:18,240
+the rank ordering is in order of most downloaded 
+to lease downloaded and if you click on a package  
 
 123
-00:04:24,560 --> 00:04:29,720
-elections and other such news events
+00:11:18,240 --> 00:11:23,840
+name it takes you to a bioconductor's package 
+landing page the page has badges to indicate  
 
 124
-00:04:29,840 --> 00:04:33,600
-there's also the bioconductor community
+00:11:23,840 --> 00:11:30,320
+package health and information on the package 
+like the description documentation what package  
 
 125
-00:04:31,600 --> 00:04:35,520
-slack channel and i really encourage
+00:11:30,320 --> 00:11:35,920
+dependencies or reverse dependencies there are 
+and in the bottom a link to download the package  
 
 126
-00:04:33,600 --> 00:04:37,600
-everyone to join the channel as it is
+00:11:35,920 --> 00:11:43,040
+directly instead of through bioc manager access to 
+the code base in git.bioconductor.org and package  
 
 127
-00:04:35,520 --> 00:04:39,360
-great for conversation there are a
+00:11:43,040 --> 00:11:49,120
+download statistics probably the most helpful on 
+this page is the package documentation that a user  
 
 128
-00:04:37,600 --> 00:04:41,040
-number of specialized channels that may
+00:11:49,120 --> 00:11:55,840
+can browse through before downloading a package to 
+see if it's appropriate for their type of analysis
 
 129
-00:04:39,360 --> 00:04:44,639
-be useful for a very particular
+00:11:56,480 --> 00:12:00,240
+so before switching to a developer's 
+point of view let's revisit the core team  
 
 130
-00:04:41,040 --> 00:04:46,560
-discussion like microbiome metabolomics
+00:12:00,240 --> 00:12:04,720
+and in these few concepts for users what sort 
+of infrastructure is required in the background  
 
 131
-00:04:44,639 --> 00:04:48,560
-a proteomics channel
+00:12:05,280 --> 00:12:10,800
+so there's obviously some package maintenance 
+with regard to bioc manager anvil anvil specific  
 
 132
-00:04:46,560 --> 00:04:50,320
-we also have channels to ask about core
+00:12:10,800 --> 00:12:17,040
+packages and bioseat views packages there's a 
+concept of a daily build of all bioconductor  
 
 133
-00:04:48,560 --> 00:04:52,400
-infrastructure pieces that we'll discuss
+00:12:17,040 --> 00:12:22,880
+packages so that they're available through the 
+bioc manager install function there's generation  
 
 134
-00:04:50,320 --> 00:04:54,240
-a little bit later on but channels like
+00:12:22,880 --> 00:12:28,400
+and upkeep of docker images so bioconductor docker 
+images for both release and develop branches  
 
 135
-00:04:52,400 --> 00:04:56,560
-the bioc builds for build system
+00:12:28,400 --> 00:12:32,560
+and an anvil specific docker image that 
+needs to be submitted to the anvil platform  
 
 136
-00:04:54,240 --> 00:04:58,880
-questions or biosee hubs for questions
+00:12:33,600 --> 00:12:38,320
+there's also the binary package generation 
+for those provide packages provided through  
 
 137
-00:04:56,560 --> 00:05:01,680
-unlike experiment hub annotation hub or
+00:12:38,320 --> 00:12:42,880
+anvil install and then there's the website 
+code and website interaction so that you  
 
 138
-00:04:58,880 --> 00:05:03,280
-bioc file cache
+00:12:42,880 --> 00:12:48,160
+could see that biosea views page and package 
+landing pages and the constant regeneration  
 
 139
-00:05:01,680 --> 00:05:05,280
-there are a number of conferences
+00:12:48,160 --> 00:12:52,560
+of the website to make sure that all that 
+information stays up to date to the latest  
 
 140
-00:05:03,280 --> 00:05:07,520
-workshops and training events throughout
+00:12:53,440 --> 00:12:57,440
+and then at the bottom of the packing landing 
+pages i mentioned it briefly but there's package  
 
 141
-00:05:05,280 --> 00:05:09,360
-the year there's a bioconductor event
+00:12:57,440 --> 00:13:02,960
+download statistics that get calculated for each 
+package as well so again hopefully that you can  
 
 142
-00:05:07,520 --> 00:05:11,680
-calendar off the main website that
+00:13:02,960 --> 00:13:08,080
+see while it may seem like trivial and basic 
+functionality that there's a lot that needs to  
 
 143
-00:05:09,360 --> 00:05:13,440
-anyone can submit bioconductor related
+00:13:08,080 --> 00:13:12,320
+be in place behind the scenes for everything 
+to function properly and interact properly
 
 144
-00:05:11,680 --> 00:05:15,600
-events to advertise
+00:13:15,040 --> 00:13:19,680
+so the core team has a subset of packages 
+that are considered core packages and core  
 
 145
-00:05:13,440 --> 00:05:18,000
-anyone is welcome to submit event
+00:13:19,680 --> 00:13:24,320
+team maintained but most of the packages 
+in bioconductor are community contributed  
 
 146
-00:05:15,600 --> 00:05:21,520
-for inclusion on the page either by
+00:13:24,880 --> 00:13:29,200
+anyone from the community is welcome to 
+develop and submit a package to bioconductor  
 
 147
-00:05:18,000 --> 00:05:23,440
-emailing events at bioconductor.org
+00:13:29,200 --> 00:13:33,520
+there are certain specific package requirements 
+that should be implemented when developing  
 
 148
-00:05:21,520 --> 00:05:25,600
-or we're working on a forum version that
+00:13:33,520 --> 00:13:37,840
+and a package will undergo a review 
+process once a package is accepted  
 
 149
-00:05:23,440 --> 00:05:27,600
-should be available soon
+00:13:37,840 --> 00:13:42,320
+then it's added to the daily builder and 
+available through bioc manager install
 
 150
-00:05:25,600 --> 00:05:29,360
-minimum requirements for an event is a
+00:13:44,720 --> 00:13:50,160
+so package specific requirements can be 
+found at contributions.bioconnector.org  
 
 151
-00:05:27,600 --> 00:05:30,720
-relevance to bioconductor and a
+00:13:50,160 --> 00:13:55,120
+and the developer section of the main website 
+we are in the process of moving information  
 
 152
-00:05:29,360 --> 00:05:33,120
-willingness to adhere to the
+00:13:55,120 --> 00:14:00,480
+from the developer section of the website to 
+the contributions.bioconductor.org location  
 
 153
-00:05:30,720 --> 00:05:35,039
-bioconductor code of conduct
+00:14:00,480 --> 00:14:03,440
+so eventually all the information 
+will be in one location  
 
 154
-00:05:33,120 --> 00:05:36,560
-conferences are always a good time and a
+00:14:04,400 --> 00:14:09,200
+but let's go over some of the key concepts that 
+should be implemented when developing a package  
 
 155
-00:05:35,039 --> 00:05:39,440
-great way to meet other members of the
+00:14:10,000 --> 00:14:15,520
+one of the main things is reusing or extending 
+existing classes and using the well-developed  
 
 156
-00:05:36,560 --> 00:05:41,199
-community and network hopefully you are
+00:14:15,520 --> 00:14:21,280
+import and export methods for certain data types 
+bioconductor has the concept of interoperability  
 
 157
-00:05:39,440 --> 00:05:43,680
-all enjoying yourselves here at bioc
+00:14:21,280 --> 00:14:26,640
+so if a user wants to use one package to import a 
+different normalize and a third to visualize the  
 
 158
-00:05:41,199 --> 00:05:46,479
-asia which has become an annual event
+00:14:26,640 --> 00:14:32,800
+manipulation of data from one package to the next 
+should be minimal if not eliminated completely for  
 
 159
-00:05:43,680 --> 00:05:48,320
-there's also the annual maine bios
+00:14:32,800 --> 00:14:38,800
+the user so ideally the output of one should 
+be the input to another this is why we like to  
 
 160
-00:05:46,479 --> 00:05:50,160
-conference normally held in the united
+00:14:38,800 --> 00:14:45,200
+emphasize using or extending any of the existing 
+class structures another good practice worth  
 
 161
-00:05:48,320 --> 00:05:53,039
-states in late summer
+00:14:45,200 --> 00:14:51,200
+mentioning is the caching of web-based data when 
+possible this way if a user is without internet or  
 
 162
-00:05:50,160 --> 00:05:55,120
-and the annual eurobiose conference and
+00:14:51,200 --> 00:14:57,600
+requests the same file from a website or a website 
+is temporary unavailable they don't have to  
 
 163
-00:05:53,039 --> 00:05:57,280
-the next currently one scheduled is for
+00:14:57,600 --> 00:15:03,120
+re-download and could potentially use a previously 
+downloaded version instead of having to wait for  
 
 164
-00:05:55,120 --> 00:05:59,759
-march 2022
+00:15:03,120 --> 00:15:09,760
+the internet or re-download data another good 
+practice is implementing unit tests it's strongly  
 
 165
-00:05:57,280 --> 00:06:01,680
-in recent years we are excited to see
+00:15:09,760 --> 00:15:15,120
+recommended while tests can seem burdensome 
+if added to the development process early it  
 
 166
-00:05:59,759 --> 00:06:03,520
-initiatives in other countries as well
+00:15:15,120 --> 00:15:20,800
+can actually aid in development so testing for 
+things like edge cases and having both positive  
 
 167
-00:06:01,680 --> 00:06:05,680
-that bioconductor is glad to send
+00:15:20,800 --> 00:15:27,360
+and negative tests can ensure proper proper 
+functionality biggest thing that bioconductor  
 
 168
-00:06:03,520 --> 00:06:07,919
-representatives and be a part of
+00:15:27,360 --> 00:15:32,720
+is also going to insist upon is a really 
+detailed vignette with runnable code examples  
 
 169
-00:06:05,680 --> 00:06:10,800
-the community of bioinformatics software
+00:15:32,720 --> 00:15:38,320
+so vignettes are compiled when built so it can 
+also help ensure proper functioning code but we  
 
 170
-00:06:07,919 --> 00:06:13,360
-developers in mexico and latin america
+00:15:38,320 --> 00:15:44,240
+like detailed vignettes because ideally this gives 
+your users an understanding of the package and  
 
 171
-00:06:10,800 --> 00:06:15,280
-have started organizing yearly week-long
+00:15:44,240 --> 00:15:49,280
+the unique functionality that the package provides 
+and these are just a few concepts of the many that  
 
 172
-00:06:13,360 --> 00:06:17,600
-workshops and various conference and
+00:15:49,280 --> 00:15:56,320
+you'll find on this contributions.bioconductor.org 
+page so once a package is developed a user then  
 
 173
-00:06:15,280 --> 00:06:19,280
-workshops throughout the year to aid in
+00:15:56,320 --> 00:16:01,680
+submits to the bioconductor new submission tracker 
+on github there's some useful information on the  
 
 174
-00:06:17,600 --> 00:06:21,759
-development of the spanish-speaking
+00:16:01,680 --> 00:16:06,160
+home page about what to expect and how 
+to submit related or dependent packages  
 
 175
-00:06:19,280 --> 00:06:25,520
-armed bioconnector community
+00:16:06,160 --> 00:16:12,240
+but to submit a new issue you go to open a new 
+issue under bioconductor contributions the title  
 
 176
-00:06:21,759 --> 00:06:27,120
-and the h3a bionet and h3a africa
+00:16:12,240 --> 00:16:18,480
+should be your package name all packages currently 
+require a github repository location and the link  
 
 177
-00:06:25,520 --> 00:06:29,759
-launched a series of workshops and
+00:16:18,480 --> 00:16:23,840
+should be updated pointing to this location a 
+package then is an awaiting moderation stage  
 
 178
-00:06:27,120 --> 00:06:31,840
-webinars to help advance the african
+00:16:24,400 --> 00:16:29,760
+a reviewer will be assigned and the package 
+added to our get.bioconductor.org location  
 
 179
-00:06:29,759 --> 00:06:34,639
-coding and research communities which
+00:16:29,760 --> 00:16:36,560
+and a build triggered on all three major os 
+platforms linux mac and windows once a package  
 
 180
-00:06:31,840 --> 00:06:36,560
-bioconductor took part in also
+00:16:36,560 --> 00:16:41,360
+is building and checking without error the 
+reviewer will do an in-depth review of the package  
 
 181
-00:06:34,639 --> 00:06:38,400
-these again are just a few of the many
+00:16:41,360 --> 00:16:46,560
+and offer comments suggestions or request changes 
+consistent with bioconductor package requirements  
 
 182
-00:06:36,560 --> 00:06:40,479
-workshops webinars and training
+00:16:47,200 --> 00:16:51,760
+there's an open dialogue in the review process 
+open to the community and governed by the  
 
 183
-00:06:38,400 --> 00:06:42,479
-opportunities launched around the world
+00:16:51,760 --> 00:16:57,760
+bioconductor code of conduct once a package is 
+accepted it's added to the nightly daily builder
 
 184
-00:06:40,479 --> 00:06:44,800
-throughout the year and we are really
+00:16:59,920 --> 00:17:06,320
+bioconductor uses get for version control of 
+package source code bioconductor builds only from  
 
 185
-00:06:42,479 --> 00:06:47,280
-excited to see that the bioconnector
+00:17:06,320 --> 00:17:11,600
+get.bioconductor.org and users must push 
+changes to this location to propagate  
 
 186
-00:06:44,800 --> 00:06:51,360
-community is growing and that we can be
+00:17:11,600 --> 00:17:18,480
+them to users from a few times a week to daily 
+the bioconductor builders will do a get clone  
 
 187
-00:06:47,280 --> 00:06:51,360
-a part of research worldwide
+00:17:18,480 --> 00:17:23,680
+a version of the package and then do an r 
+command install r command build and r command  
 
 188
-00:06:51,919 --> 00:06:55,120
-so those are some great resources to
+00:17:23,680 --> 00:17:30,320
+check if the package installs builds and checks 
+cleanly and has a valid version bump for changes  
 
 189
-00:06:53,599 --> 00:06:56,639
-connect to the community but now i want
+00:17:30,320 --> 00:17:34,880
+the package is propagated and becomes available 
+through the bioc manager install function  
 
 190
-00:06:55,120 --> 00:06:58,400
-to take it back to this slide on
+00:17:35,600 --> 00:17:39,760
+maintainers can find the build reports from 
+the main website in the lower right corner  
 
 191
-00:06:56,639 --> 00:07:00,960
-organization just for a second because
+00:17:39,760 --> 00:17:44,320
+marked build reports this page indicates 
+how frequently the builds take place  
 
 192
-00:06:58,400 --> 00:07:01,759
-we skipped over the last entry the core
+00:17:45,120 --> 00:17:51,120
+if we click on browse for any of the build reports 
+you'll get a list of every bioconductor package  
 
 193
-00:07:00,960 --> 00:07:03,599
-team
+00:17:51,120 --> 00:17:56,320
+and the status through each stage the top of 
+the page has a time stamp to indicate when it  
 
 194
-00:07:01,759 --> 00:07:05,680
-the core team plays a vital role in the
+00:17:56,320 --> 00:18:02,400
+was generated and each package has information 
+on the version git commit and get date that the  
 
 195
-00:07:03,599 --> 00:07:07,680
-functionality of the project it's a
+00:18:02,400 --> 00:18:08,080
+builder used for that report you can click on any 
+stage indicator for more information and results  
 
 196
-00:07:05,680 --> 00:07:09,840
-small dedicated group of developers that
+00:18:09,840 --> 00:18:14,160
+so what infrastructure is needed for 
+everything just discussed for submitting  
 
 197
-00:07:07,680 --> 00:07:11,360
-help develop maintain and enhance core
+00:18:14,160 --> 00:18:19,040
+a package well there's evaluating and 
+updating of the package guidelines  
 
 198
-00:07:09,840 --> 00:07:12,880
-packages and project level
+00:18:19,680 --> 00:18:23,840
+there's the code that interacts with 
+the package submission process on github  
 
 199
-00:07:11,360 --> 00:07:14,560
-infrastructure
+00:18:23,840 --> 00:18:28,000
+and code specific to the new submission 
+process on each of the three develop builders  
 
 200
-00:07:12,880 --> 00:07:16,319
-so what does that really mean i get the
+00:18:28,960 --> 00:18:32,960
+the core team also participates currently 
+in package reviews for new submissions  
 
 201
-00:07:14,560 --> 00:07:18,000
-feeling that most people think that the
+00:18:34,480 --> 00:18:38,400
+there is facilitating the entire 
+bioconductor get ecosystem  
 
 202
-00:07:16,319 --> 00:07:20,560
-core team only takes care of core
+00:18:38,400 --> 00:18:44,080
+which includes the get.bioconductor.org 
+main repository location for all of the  
 
 203
-00:07:18,000 --> 00:07:22,880
-packages and package maintenance but we
+00:18:44,080 --> 00:18:50,240
+bioconductor packages a git contributions 
+app that manages ssh credentials of users  
 
 204
-00:07:20,560 --> 00:07:24,560
-really do so much more than that we
+00:18:51,120 --> 00:18:57,280
+get a light application that manages which users 
+have access to which packages and gut hooks that  
 
 205
-00:07:22,880 --> 00:07:27,120
-talked about bioconductor being a
+00:18:57,280 --> 00:19:03,600
+respond to different triggering events there's 
+also the bioconductor build system called the bbs  
 
 206
-00:07:24,560 --> 00:07:28,720
-project there's a lot of infrastructure
+00:19:03,600 --> 00:19:08,560
+which is a large undertaking of the core team 
+there are minimally six build machines that  
 
 207
-00:07:27,120 --> 00:07:30,800
-pieces that are in place to make the
+00:19:08,560 --> 00:19:14,640
+require system administration and the underlying 
+code base on each to handle the get clone the r  
 
 208
-00:07:28,720 --> 00:07:33,280
-project function so thinking about the
+00:19:14,640 --> 00:19:20,000
+command install the r command build the r command 
+check the package propagation and the generation  
 
 209
-00:07:30,800 --> 00:07:35,039
-resources we just went over what core
+00:19:20,000 --> 00:19:25,920
+of the build reports and there's minimally six 
+builders because for both the bioconductor release  
 
 210
-00:07:33,280 --> 00:07:37,919
-infrastructure is involved that the core
+00:19:25,920 --> 00:19:32,560
+and bioconductor devel branches we cover the 
+three main os platforms of mac linux and windows
 
 211
-00:07:35,039 --> 00:07:37,919
-team maintains
+00:19:35,280 --> 00:19:40,480
+so briefly i wanted to also touch upon why 
+bioconductor has a release in a devel branch  
 
 212
-00:07:38,319 --> 00:07:41,360
-so first there's the main website
+00:19:40,480 --> 00:19:47,040
+bioconductor is closely associated with r most 
+years in spring r has a release bioconductor  
 
 213
-00:07:39,840 --> 00:07:43,680
-bioconductor.org
+00:19:47,040 --> 00:19:51,200
+then needs to update which version of 
+r is being used for packages to insured  
 
 214
-00:07:41,360 --> 00:07:45,840
-the core team is responsible for updates
+00:19:51,200 --> 00:19:56,960
+continued proper functionality bioconductor 
+has two releases of gear a spring and a fall  
 
 215
-00:07:43,680 --> 00:07:47,440
-and website upkeep there's an entire
+00:19:57,600 --> 00:20:05,200
+where the devel branch is released and becomes the 
+new release from roughly late april and early may  
 
 216
-00:07:45,840 --> 00:07:49,599
-code base for the website and the
+00:20:05,200 --> 00:20:10,480
+when the new version of r is released both the 
+bioconductor release and devel branch use that  
 
 217
-00:07:47,440 --> 00:07:51,120
-website is regenerated about every 20
+00:20:10,480 --> 00:20:17,200
+stapled release version of r or our patched 
+version in fall normally late october early  
 
 218
-00:07:49,599 --> 00:07:53,280
-minutes to make sure that there is
+00:20:17,200 --> 00:20:22,960
+november bioconductor does a second release 
+at this time the bioconductor release branch  
 
 219
-00:07:51,120 --> 00:07:55,120
-constant up-to-date information
+00:20:22,960 --> 00:20:29,440
+still uses that stable rr patch version but the 
+devel bioconductor branch switches to use r devel  
 
 220
-00:07:53,280 --> 00:07:57,280
-similarly there's a code base for the
+00:20:29,440 --> 00:20:35,200
+in preparation for the next r release in spring 
+having a devel branch allows maintainers to  
 
 221
-00:07:55,120 --> 00:07:59,360
-support site website we thankfully have
+00:20:35,200 --> 00:20:41,440
+adapt to changes in base r as well as changes in 
+any other dependent packages that they may have  
 
 222
-00:07:57,280 --> 00:08:01,680
-support and help from the biostars that
+00:20:41,440 --> 00:20:46,560
+and then have minimal disruption or 
+downtime to the end user bioconductor  
 
 223
-00:07:59,360 --> 00:08:03,680
-our support site is modeled after and in
+00:20:46,560 --> 00:20:51,360
+encourage package maintainers to enhance and 
+make major changes on the development branch  
 
 224
-00:08:01,680 --> 00:08:06,479
-particular an attay that assists but we
+00:20:51,360 --> 00:20:56,640
+and restrict changes on the release branch 
+to minor bug corrections again also reasoning  
 
 225
-00:08:03,680 --> 00:08:08,800
-still have core team involvement in the
+00:20:56,640 --> 00:21:01,840
+that there would be a place for development and 
+potential breakage without affecting the end users  
 
 226
-00:08:06,479 --> 00:08:10,560
-upkeep and maintenance of that site
+00:21:03,120 --> 00:21:08,000
+the core team is always extremely busy during 
+release time and with release related tasks it  
 
 227
-00:08:08,800 --> 00:08:12,000
-there's also monitoring and answering
+00:21:08,000 --> 00:21:14,560
+involves updating versions of r and bioconductor 
+on minimumly the six builders emailing maintainers  
 
 228
-00:08:10,560 --> 00:08:14,319
-questions that appear on the community
+00:21:14,560 --> 00:21:19,120
+that ignored the build failure notifications to 
+try and fix their packages to avoid deprecation  
 
 229
-00:08:12,000 --> 00:08:16,319
-slack channels many times resulting in
+00:21:19,120 --> 00:21:24,720
+and removal from bioconductor reviewing the 
+influx of newly submitted packages for inclusion  
 
 230
-00:08:14,319 --> 00:08:18,160
-follow-up and investigation of issues
+00:21:25,760 --> 00:21:31,280
+fixing or modifying any core packages that 
+require such attention adding release related  
 
 231
-00:08:16,319 --> 00:08:20,000
-comments and concerns
+00:21:31,280 --> 00:21:37,680
+annotation resources creating new branches on 
+get.bioconductor.org for all the packages for  
 
 232
-00:08:18,160 --> 00:08:21,759
-and many core team members participate
+00:21:37,680 --> 00:21:43,840
+the new release and collating all the news files 
+from packages to generate the release announcement  
 
 233
-00:08:20,000 --> 00:08:23,039
-in presenting material for conferences
+00:21:45,280 --> 00:21:50,160
+there is another key infrastructure piece that 
+the core team maintains that has gained increasing  
 
 234
-00:08:21,759 --> 00:08:24,800
-and workshops
+00:21:50,160 --> 00:21:56,160
+popularity in recent years the concept of the 
+bioconductor hubs annotation hub and experiment  
 
 235
-00:08:23,039 --> 00:08:27,039
-there's also normally components of the
+00:21:56,160 --> 00:22:04,000
+hub as a brief background git does not allow large 
+files and our current git system does not support  
 
 236
-00:08:24,800 --> 00:08:29,440
-conference like specialized web pages
+00:22:04,000 --> 00:22:09,440
+get lfs which means there has to be an alternative 
+way to provide large data sets to users  
 
 237
-00:08:27,039 --> 00:08:31,919
-systems for hosting workshops and having
+00:22:10,240 --> 00:22:15,840
+bioconductor insists data to be hosted on a 
+secure public or institutional server like  
 
 238
-00:08:29,440 --> 00:08:33,919
-computer environments for participants
+00:22:15,840 --> 00:22:23,920
+zenodo amazon s3 buckets microsoft azure among 
+other trusted sites or direct access to web  
 
 239
-00:08:31,919 --> 00:08:36,320
-that the core team also helps manage and
+00:22:23,920 --> 00:22:32,000
+resources or databases if available like ensemble 
+or ncbi rather than privately hosting data on say  
 
 240
-00:08:33,919 --> 00:08:38,839
-facilitate so hopefully you can already
+00:22:32,000 --> 00:22:37,600
+a github or dropbox if you're developing a 
+package we encourage a discussion about data  
 
 241
-00:08:36,320 --> 00:08:41,519
-see the importance of this back-end
+00:22:37,600 --> 00:22:46,160
+hosting on other platforms on the bioslee dash 
+devel r-projects.org developers mailing list  
 
 242
-00:08:38,839 --> 00:08:43,200
-infrastructure so continuing on i want
+00:22:46,800 --> 00:22:51,440
+if a maintainer does not have access to 
+such a resource bioconductor provides  
 
 243
-00:08:41,519 --> 00:08:46,399
-to think about bioconductor from two
+00:22:51,440 --> 00:22:58,720
+an amazon s3 bucket for use we are however 
+actively investigating a migration of location  
 
 244
-00:08:43,200 --> 00:08:48,240
-perspectives a user and a developer and
+00:22:58,720 --> 00:23:06,080
+from amazon s3 to microsoft azure developers can 
+download resources directly from the trusted sites  
 
 245
-00:08:46,399 --> 00:08:50,000
-along the way we'll discuss additional
+00:23:06,720 --> 00:23:11,840
+but must implement a caching mechanism in 
+the background and we highly recommend the  
 
 246
-00:08:48,240 --> 00:08:52,000
-important project infrastructure that
+00:23:11,840 --> 00:23:18,640
+bioconductor core package bioc file cache the 
+other alternative to downloading directly and  
 
 247
-00:08:50,000 --> 00:08:54,160
-the core team helps develop maintain and
+00:23:18,640 --> 00:23:24,000
+implementing bios you file cache is to list the 
+data in the annotation hub or experiment hub  
 
 248
-00:08:52,000 --> 00:08:57,519
-enhance to try to provide a good
+00:23:24,720 --> 00:23:29,680
+the annotation hub and the experiment hub are 
+databases with references to the external data  
 
 249
-00:08:54,160 --> 00:08:57,519
-experience to the community
+00:23:29,680 --> 00:23:36,560
+for download the hub interfaces provide a querying 
+mechanism on metadata provided at inclusion of the  
 
 250
-00:08:58,399 --> 00:09:02,959
-so thinking about a user how does a user
+00:23:36,560 --> 00:23:42,560
+data into the database when using the hub 
+interface for download it already uses bioc  
 
 251
-00:09:00,480 --> 00:09:04,720
-interact with bioconductor traditionally
+00:23:42,560 --> 00:23:48,800
+file cache as a caching mechanism so a maintainer 
+does not have to implement it themselves the other  
 
 252
-00:09:02,959 --> 00:09:06,959
-i think most users were using our
+00:23:48,800 --> 00:23:54,800
+advantage to listing the data in the hubs is the 
+findability of resources outside of r or outside  
 
 253
-00:09:04,720 --> 00:09:09,360
-terminal or rstudio which is still
+00:23:54,800 --> 00:24:00,880
+the use of the associated bioconductor package 
+there are bioconductor core packages experiment  
 
 254
-00:09:06,959 --> 00:09:10,560
-highly popular and widely utilized but
+00:24:00,880 --> 00:24:05,920
+hub and annotation hub that can be queried for 
+data of different types or from different sources  
 
 255
-00:09:09,360 --> 00:09:12,240
-there are also newer available
+00:24:06,480 --> 00:24:11,760
+the resources can be searched either through a 
+query performed within r or investigation through  
 
 256
-00:09:10,560 --> 00:09:14,480
-technologies and projects like using
+00:24:11,760 --> 00:24:17,840
+the hub apis and annotationhub.bioconductor.org 
+or experimenthub.bioconductor  
 
 257
-00:09:12,240 --> 00:09:16,080
-docker images or cloud-based initiatives
+00:24:19,120 --> 00:24:24,320
+the api is admittedly a little crude and 
+we are working on a revamp there's also a  
 
 258
-00:09:14,480 --> 00:09:17,920
-like the anvil project that allow a
+00:24:24,320 --> 00:24:28,960
+shiny version to query hub resources that has 
+been developed and should be announced soon  
 
 259
-00:09:16,080 --> 00:09:20,000
-different user experience
+00:24:29,760 --> 00:24:35,840
+the query function in r will take a list of terms 
+and return resources matching search criteria  
 
 260
-00:09:17,920 --> 00:09:22,399
-for our terminal and rstudio users
+00:24:35,840 --> 00:24:42,400
+for example you can see we queried 
+here for ensembl gtf release 103  
 
 261
-00:09:20,000 --> 00:09:24,399
-there's a cram package bioc manager that
+00:24:42,400 --> 00:24:48,640
+and homo sapiens which returned four results a 
+single bracket using the ahid of interest will  
 
 262
-00:09:22,399 --> 00:09:26,320
-is downloaded installed from cran and
+00:24:48,640 --> 00:24:54,160
+give more information on the resource and a double 
+bracket will download and cache the resource  
 
 263
-00:09:24,399 --> 00:09:28,880
-provides access to all packages in
+00:24:55,520 --> 00:25:00,240
+the requirement to add data to the hubs 
+is a package that is already or will be  
 
 264
-00:09:26,320 --> 00:09:30,880
-bioconductor and crayon repositories the
+00:25:00,240 --> 00:25:06,560
+submitted to bioconductor that includes an 
+inst metadata.csv file with metadata for the  
 
 265
-00:09:28,880 --> 00:09:33,360
-anvil which stands for analysis
+00:25:06,560 --> 00:25:12,800
+resources that will be added to the database and 
+an in-script directory with files that indicate  
 
 266
-00:09:30,880 --> 00:09:36,959
-visualization and informative lab space
+00:25:12,800 --> 00:25:19,760
+how the data was generated and relevant source 
+information the vignette creating a hub package  
 
 267
-00:09:33,360 --> 00:09:38,560
-is an nhgri project it provides a secure
+00:25:19,760 --> 00:25:26,000
+experiment hub or annotation hub in the core 
+package hub pub describes this in more detail  
 
 268
-00:09:36,959 --> 00:09:40,880
-cloud-based computing environment for
+00:25:26,800 --> 00:25:30,880
+other questions can be directed to 
+the hubs at bioconductor.org email  
 
 269
-00:09:38,560 --> 00:09:42,640
-analysis i will not go into detail here
+00:25:31,520 --> 00:25:36,480
+the hubs currently involve a lot of interaction 
+from the core team we are working on making  
 
 270
-00:09:40,880 --> 00:09:44,800
-about anvil and docker images but i
+00:25:36,480 --> 00:25:42,080
+enhancements and restructure to try to make it 
+simpler and easier to submit and maintain hub data  
 
 271
-00:09:42,640 --> 00:09:46,240
-encourage everyone to attend natashas
+00:25:42,080 --> 00:25:48,160
+with limited core team interaction currently when 
+data is submitted to the hubs a core team member  
 
 272
-00:09:44,800 --> 00:09:48,560
-talk where i believe some of these
+00:25:48,160 --> 00:25:53,760
+will evaluate the data and metadata provided 
+if needed assist with uploading data to the  
 
 273
-00:09:46,240 --> 00:09:50,560
-concepts and resources will be covered i
+00:25:53,760 --> 00:25:59,280
+bioconductor provided location again currently 
+that's an amazon s3 bucket but that could change  
 
 274
-00:09:48,560 --> 00:09:52,240
-will mention that the anvil bioconductor
+00:26:00,160 --> 00:26:04,640
+and update the database for the metadata 
+provided so the metadata is available  
 
 275
-00:09:50,560 --> 00:09:54,160
-package provides a different install
+00:26:04,640 --> 00:26:10,560
+through the query functions additionally 
+core team maintenance of the hubs includes  
 
 276
-00:09:52,240 --> 00:09:56,560
-function designed specifically for use
+00:26:10,560 --> 00:26:18,160
+managing server code on the amazon web service ec2 
+instances that hosts the website and api endpoints  
 
 277
-00:09:54,160 --> 00:09:58,640
-with the bioconductor docker images and
+00:26:18,160 --> 00:26:24,880
+for both hubs and general core package maintenance 
+of the relevant core packages experiment hub  
 
 278
-00:09:56,560 --> 00:10:01,600
-the anvil computing space that can
+00:26:24,880 --> 00:26:31,040
+annotation hub bioc file cache experiment 
+hub data annotation hub data and hubpub  
 
 279
-00:09:58,640 --> 00:10:03,279
-provide fast binary package installation
+00:26:32,880 --> 00:26:36,480
+so there are still other core related 
+tasks and infrastructure that we just  
 
 280
-00:10:01,600 --> 00:10:05,440
-why is this significant well some
+00:26:36,480 --> 00:26:42,000
+haven't had time to touch on things like the 
+amazon web service resources that we utilize  
 
 281
-00:10:03,279 --> 00:10:07,839
-packages require compilation which can
+00:26:42,000 --> 00:26:48,480
+and the microsoft azure project resources 
+but hopefully this gave everyone an idea  
 
 282
-00:10:05,440 --> 00:10:09,680
-take several seconds package binaries
+00:26:48,480 --> 00:26:54,000
+of how much the core team supports in addition to 
+just general core package health and development  
 
 283
-00:10:07,839 --> 00:10:11,760
-are pre-compiled allowing for a near
+00:26:55,840 --> 00:27:00,240
+so with that i would like to thank the conference 
+organizers for inviting me to speak it really  
 
 284
-00:10:09,680 --> 00:10:13,680
-instantaneous installation the
+00:27:00,240 --> 00:27:06,240
+has been an honor and thank you to my fellow core 
+team members i appreciate all the work and effort  
 
 285
-00:10:11,760 --> 00:10:15,519
-limitation of binaries is that package
+00:27:06,240 --> 00:27:11,280
+we all put into keeping the project moving 
+forward and most of all a thank you to the  
 
 286
-00:10:13,680 --> 00:10:16,880
-binaries are specific to the system
+00:27:11,280 --> 00:27:17,120
+bioconductor community bioconductor would not be 
+successful without the contributions of all of you  
 
 287
-00:10:15,519 --> 00:10:18,560
-configuration to which they were
+00:27:17,120 --> 00:27:22,000
+and whether you're a first time user or a 
+long-time contributor we really hope that you  
 
 288
-00:10:16,880 --> 00:10:21,839
-generated which is why they're only
+00:27:22,000 --> 00:27:29,200
+found a welcoming and helpful community so please 
+feel free to send me any questions to my email  
 
 289
-00:10:18,560 --> 00:10:21,839
-available for use with the docker
+00:27:29,200 --> 00:27:47,840
+or on the community slack if anyone has any 
+questions about this presentation thank you cheers
 
 290
-00:10:23,600 --> 00:10:27,680
-another important concept for users
-
-291
-00:10:25,600 --> 00:10:30,320
-especially new users is how to find
-
-292
-00:10:27,680 --> 00:10:32,000
-packages of interest in bios manager
-
-293
-00:10:30,320 --> 00:10:34,320
-there's a function available that shows
-
-294
-00:10:32,000 --> 00:10:36,000
-a listing of all available packages or
-
-295
-00:10:34,320 --> 00:10:38,640
-you could use a search term to find
-
-296
-00:10:36,000 --> 00:10:41,279
-packages but that assumes some a priori
-
-297
-00:10:38,640 --> 00:10:43,200
-knowledge the bioc views page and
-
-298
-00:10:41,279 --> 00:10:45,519
-package landing pages can be really
-
-299
-00:10:43,200 --> 00:10:47,760
-useful for finding packages
-
-300
-00:10:45,519 --> 00:10:49,600
-off the bioconductor.org home page
-
-301
-00:10:47,760 --> 00:10:52,160
-there's a link to available software
-
-302
-00:10:49,600 --> 00:10:54,079
-packages this takes you to what we call
-
-303
-00:10:52,160 --> 00:10:56,560
-our bioseed views page and includes
-
-304
-00:10:54,079 --> 00:10:59,680
-software annotation experiment and
-
-305
-00:10:56,560 --> 00:11:01,279
-workflow packages books are coming soon
-
-306
-00:10:59,680 --> 00:11:04,480
-you can either search for terms of
-
-307
-00:11:01,279 --> 00:11:06,640
-interest like single cell or proteomics
-
-308
-00:11:04,480 --> 00:11:08,640
-to get a list of packages or if you know
-
-309
-00:11:06,640 --> 00:11:10,880
-a package name you can search for it
-
-310
-00:11:08,640 --> 00:11:12,720
-specifically like genomic ranges or
-
-311
-00:11:10,880 --> 00:11:14,959
-summarized experiment
-
-312
-00:11:12,720 --> 00:11:17,200
-the rank ordering is in order of most
-
-313
-00:11:14,959 --> 00:11:19,120
-downloaded to lease downloaded and if
-
-314
-00:11:17,200 --> 00:11:21,920
-you click on a package name it takes you
-
-315
-00:11:19,120 --> 00:11:24,320
-to a bioconductor's package landing page
-
-316
-00:11:21,920 --> 00:11:26,560
-the page has badges to indicate package
-
-317
-00:11:24,320 --> 00:11:29,920
-health and information on the package
-
-318
-00:11:26,560 --> 00:11:31,600
-like the description documentation what
-
-319
-00:11:29,920 --> 00:11:33,360
-package dependencies or reverse
-
-320
-00:11:31,600 --> 00:11:35,440
-dependencies there are
-
-321
-00:11:33,360 --> 00:11:37,680
-and in the bottom a link to download the
-
-322
-00:11:35,440 --> 00:11:40,839
-package directly instead of through bioc
-
-323
-00:11:37,680 --> 00:11:42,399
-manager access to the code base in
-
-324
-00:11:40,839 --> 00:11:44,800
-git.bioconductor.org
-
-325
-00:11:42,399 --> 00:11:46,640
-and package download statistics
-
-326
-00:11:44,800 --> 00:11:49,120
-probably the most helpful on this page
-
-327
-00:11:46,640 --> 00:11:50,800
-is the package documentation that a user
-
-328
-00:11:49,120 --> 00:11:52,560
-can browse through before downloading a
-
-329
-00:11:50,800 --> 00:11:56,040
-package to see if it's appropriate for
-
-330
-00:11:52,560 --> 00:11:56,040
-their type of analysis
-
-331
-00:11:56,480 --> 00:11:59,839
-so before switching to a developer's
-
-332
-00:11:58,240 --> 00:12:02,079
-point of view let's revisit the core
-
-333
-00:11:59,839 --> 00:12:04,000
-team and in these few concepts for users
-
-334
-00:12:02,079 --> 00:12:05,279
-what sort of infrastructure is required
-
-335
-00:12:04,000 --> 00:12:06,639
-in the background
-
-336
-00:12:05,279 --> 00:12:09,279
-so there's obviously some package
-
-337
-00:12:06,639 --> 00:12:12,000
-maintenance with regard to bioc manager
-
-338
-00:12:09,279 --> 00:12:14,160
-anvil anvil specific packages and
-
-339
-00:12:12,000 --> 00:12:16,079
-bioseat views packages
-
-340
-00:12:14,160 --> 00:12:18,240
-there's a concept of a daily build of
-
-341
-00:12:16,079 --> 00:12:19,760
-all bioconductor packages so that
-
-342
-00:12:18,240 --> 00:12:21,920
-they're available through the bioc
-
-343
-00:12:19,760 --> 00:12:23,920
-manager install function
-
-344
-00:12:21,920 --> 00:12:26,560
-there's generation and upkeep of docker
-
-345
-00:12:23,920 --> 00:12:28,800
-images so bioconductor docker images for
-
-346
-00:12:26,560 --> 00:12:30,880
-both release and develop branches and an
-
-347
-00:12:28,800 --> 00:12:33,600
-anvil specific docker image that needs
-
-348
-00:12:30,880 --> 00:12:35,200
-to be submitted to the anvil platform
-
-349
-00:12:33,600 --> 00:12:37,680
-there's also the binary package
-
-350
-00:12:35,200 --> 00:12:40,000
-generation for those provide packages
-
-351
-00:12:37,680 --> 00:12:41,360
-provided through anvil install
-
-352
-00:12:40,000 --> 00:12:43,040
-and then there's the website code and
-
-353
-00:12:41,360 --> 00:12:45,279
-website interaction so that you could
-
-354
-00:12:43,040 --> 00:12:47,519
-see that biosea views page and package
-
-355
-00:12:45,279 --> 00:12:49,360
-landing pages and the constant
-
-356
-00:12:47,519 --> 00:12:51,519
-regeneration of the website to make sure
-
-357
-00:12:49,360 --> 00:12:53,440
-that all that information stays up to
-
-358
-00:12:51,519 --> 00:12:54,720
-date to the latest
-
-359
-00:12:53,440 --> 00:12:56,720
-and then at the bottom of the packing
-
-360
-00:12:54,720 --> 00:12:58,560
-landing pages i mentioned it briefly but
-
-361
-00:12:56,720 --> 00:13:01,600
-there's package download statistics that
-
-362
-00:12:58,560 --> 00:13:03,279
-get calculated for each package as well
-
-363
-00:13:01,600 --> 00:13:05,600
-so again hopefully that you can see
-
-364
-00:13:03,279 --> 00:13:07,760
-while it may seem like trivial and basic
-
-365
-00:13:05,600 --> 00:13:09,440
-functionality that there's a lot that
-
-366
-00:13:07,760 --> 00:13:11,360
-needs to be in place behind the scenes
-
-367
-00:13:09,440 --> 00:13:14,320
-for everything to function properly and
-
-368
-00:13:11,360 --> 00:13:14,320
-interact properly
-
-369
-00:13:15,040 --> 00:13:18,560
-so the core team has a subset of
-
-370
-00:13:16,959 --> 00:13:21,040
-packages that are considered core
-
-371
-00:13:18,560 --> 00:13:23,200
-packages and core team maintained but
-
-372
-00:13:21,040 --> 00:13:24,880
-most of the packages in bioconductor are
-
-373
-00:13:23,200 --> 00:13:26,480
-community contributed
-
-374
-00:13:24,880 --> 00:13:27,920
-anyone from the community is welcome to
-
-375
-00:13:26,480 --> 00:13:30,399
-develop and submit a package to
-
-376
-00:13:27,920 --> 00:13:31,920
-bioconductor there are certain specific
-
-377
-00:13:30,399 --> 00:13:33,760
-package requirements that should be
-
-378
-00:13:31,920 --> 00:13:36,160
-implemented when developing and a
-
-379
-00:13:33,760 --> 00:13:38,240
-package will undergo a review process
-
-380
-00:13:36,160 --> 00:13:40,399
-once a package is accepted then it's
-
-381
-00:13:38,240 --> 00:13:44,320
-added to the daily builder and available
-
-382
-00:13:40,399 --> 00:13:44,320
-through bioc manager install
-
-383
-00:13:44,720 --> 00:13:50,160
-so package specific requirements can be
-
-384
-00:13:47,040 --> 00:13:52,000
-found at contributions.bioconnector.org
-
-385
-00:13:50,160 --> 00:13:54,480
-and the developer section of the main
-
-386
-00:13:52,000 --> 00:13:56,240
-website we are in the process of moving
-
-387
-00:13:54,480 --> 00:13:58,600
-information from the developer section
-
-388
-00:13:56,240 --> 00:14:00,480
-of the website to the
-
-389
-00:13:58,600 --> 00:14:02,399
-contributions.bioconductor.org location
-
-390
-00:14:00,480 --> 00:14:04,399
-so eventually all the information will
-
-391
-00:14:02,399 --> 00:14:06,160
-be in one location
-
-392
-00:14:04,399 --> 00:14:08,160
-but let's go over some of the key
-
-393
-00:14:06,160 --> 00:14:10,000
-concepts that should be implemented when
-
-394
-00:14:08,160 --> 00:14:12,160
-developing a package
-
-395
-00:14:10,000 --> 00:14:14,720
-one of the main things is reusing or
-
-396
-00:14:12,160 --> 00:14:16,800
-extending existing classes and using the
-
-397
-00:14:14,720 --> 00:14:19,360
-well-developed import and export methods
-
-398
-00:14:16,800 --> 00:14:21,680
-for certain data types bioconductor has
-
-399
-00:14:19,360 --> 00:14:23,839
-the concept of interoperability so if a
-
-400
-00:14:21,680 --> 00:14:25,600
-user wants to use one package to import
-
-401
-00:14:23,839 --> 00:14:28,079
-a different normalize and a third to
-
-402
-00:14:25,600 --> 00:14:30,240
-visualize the manipulation of data from
-
-403
-00:14:28,079 --> 00:14:32,800
-one package to the next should be
-
-404
-00:14:30,240 --> 00:14:35,600
-minimal if not eliminated completely for
-
-405
-00:14:32,800 --> 00:14:37,760
-the user so ideally the output of one
-
-406
-00:14:35,600 --> 00:14:40,000
-should be the input to another
-
-407
-00:14:37,760 --> 00:14:42,839
-this is why we like to emphasize using
-
-408
-00:14:40,000 --> 00:14:45,199
-or extending any of the existing class
-
-409
-00:14:42,839 --> 00:14:47,360
-structures another good practice worth
-
-410
-00:14:45,199 --> 00:14:50,079
-mentioning is the caching of web-based
-
-411
-00:14:47,360 --> 00:14:52,880
-data when possible this way if a user is
-
-412
-00:14:50,079 --> 00:14:55,040
-without internet or requests the same
-
-413
-00:14:52,880 --> 00:14:57,600
-file from a website or a website is
-
-414
-00:14:55,040 --> 00:15:00,399
-temporary unavailable they don't have to
-
-415
-00:14:57,600 --> 00:15:02,320
-re-download and could potentially use a
-
-416
-00:15:00,399 --> 00:15:04,160
-previously downloaded version instead of
-
-417
-00:15:02,320 --> 00:15:06,240
-having to wait for the internet or
-
-418
-00:15:04,160 --> 00:15:08,000
-re-download data
-
-419
-00:15:06,240 --> 00:15:10,560
-another good practice is implementing
-
-420
-00:15:08,000 --> 00:15:13,279
-unit tests it's strongly recommended
-
-421
-00:15:10,560 --> 00:15:15,360
-while tests can seem burdensome if added
-
-422
-00:15:13,279 --> 00:15:17,680
-to the development process early it can
-
-423
-00:15:15,360 --> 00:15:20,000
-actually aid in development so testing
-
-424
-00:15:17,680 --> 00:15:21,920
-for things like edge cases and having
-
-425
-00:15:20,000 --> 00:15:26,000
-both positive and negative tests can
-
-426
-00:15:21,920 --> 00:15:27,760
-ensure proper proper functionality
-
-427
-00:15:26,000 --> 00:15:29,680
-biggest thing that bioconductor is also
-
-428
-00:15:27,760 --> 00:15:31,759
-going to insist upon is a really
-
-429
-00:15:29,680 --> 00:15:34,240
-detailed vignette with runnable code
-
-430
-00:15:31,759 --> 00:15:36,399
-examples so vignettes are compiled when
-
-431
-00:15:34,240 --> 00:15:39,040
-built so it can also help ensure proper
-
-432
-00:15:36,399 --> 00:15:41,120
-functioning code but we like detailed
-
-433
-00:15:39,040 --> 00:15:42,560
-vignettes because ideally this gives
-
-434
-00:15:41,120 --> 00:15:44,399
-your users
-
-435
-00:15:42,560 --> 00:15:46,160
-an understanding of the package and the
-
-436
-00:15:44,399 --> 00:15:48,160
-unique functionality that the package
-
-437
-00:15:46,160 --> 00:15:49,920
-provides and these are just a few
-
-438
-00:15:48,160 --> 00:15:51,160
-concepts of the many that you'll find on
-
-439
-00:15:49,920 --> 00:15:54,160
-this
-
-440
-00:15:51,160 --> 00:15:56,160
-contributions.bioconductor.org page
-
-441
-00:15:54,160 --> 00:15:58,000
-so once a package is developed a user
-
-442
-00:15:56,160 --> 00:16:00,079
-then submits to the bioconductor new
-
-443
-00:15:58,000 --> 00:16:01,680
-submission tracker on github
-
-444
-00:16:00,079 --> 00:16:03,600
-there's some useful information on the
-
-445
-00:16:01,680 --> 00:16:06,160
-home page about what to expect and how
-
-446
-00:16:03,600 --> 00:16:08,720
-to submit related or dependent packages
-
-447
-00:16:06,160 --> 00:16:10,560
-but to submit a new issue you go to open
-
-448
-00:16:08,720 --> 00:16:12,720
-a new issue under bioconductor
-
-449
-00:16:10,560 --> 00:16:14,079
-contributions the title should be your
-
-450
-00:16:12,720 --> 00:16:16,320
-package name
-
-451
-00:16:14,079 --> 00:16:18,639
-all packages currently require a github
-
-452
-00:16:16,320 --> 00:16:21,120
-repository location and the link should
-
-453
-00:16:18,639 --> 00:16:23,440
-be updated pointing to this location
-
-454
-00:16:21,120 --> 00:16:24,399
-a package then is an awaiting moderation
-
-455
-00:16:23,440 --> 00:16:26,079
-stage
-
-456
-00:16:24,399 --> 00:16:27,880
-a reviewer will be assigned and the
-
-457
-00:16:26,079 --> 00:16:30,000
-package added to our
-
-458
-00:16:27,880 --> 00:16:32,560
-get.bioconductor.org location and a
-
-459
-00:16:30,000 --> 00:16:35,199
-build triggered on all three major os
-
-460
-00:16:32,560 --> 00:16:37,519
-platforms linux mac and windows
-
-461
-00:16:35,199 --> 00:16:39,920
-once a package is building and checking
-
-462
-00:16:37,519 --> 00:16:41,839
-without error the reviewer will do an
-
-463
-00:16:39,920 --> 00:16:44,160
-in-depth review of the package and offer
-
-464
-00:16:41,839 --> 00:16:45,920
-comments suggestions or request changes
-
-465
-00:16:44,160 --> 00:16:47,199
-consistent with bioconductor package
-
-466
-00:16:45,920 --> 00:16:49,040
-requirements
-
-467
-00:16:47,199 --> 00:16:50,959
-there's an open dialogue in the review
-
-468
-00:16:49,040 --> 00:16:52,800
-process open to the community and
-
-469
-00:16:50,959 --> 00:16:53,839
-governed by the bioconductor code of
-
-470
-00:16:52,800 --> 00:16:56,160
-conduct
-
-471
-00:16:53,839 --> 00:16:59,759
-once a package is accepted it's added to
-
-472
-00:16:56,160 --> 00:16:59,759
-the nightly daily builder
-
-473
-00:16:59,920 --> 00:17:03,959
-bioconductor uses get for version
-
-474
-00:17:01,920 --> 00:17:07,079
-control of package source code
-
-475
-00:17:03,959 --> 00:17:09,520
-bioconductor builds only from
-
-476
-00:17:07,079 --> 00:17:11,600
-get.bioconductor.org and users must push
-
-477
-00:17:09,520 --> 00:17:13,039
-changes to this location to propagate
-
-478
-00:17:11,600 --> 00:17:15,280
-them to users
-
-479
-00:17:13,039 --> 00:17:17,839
-from a few times a week to daily the
-
-480
-00:17:15,280 --> 00:17:20,319
-bioconductor builders will do a get
-
-481
-00:17:17,839 --> 00:17:22,799
-clone a version of the package and then
-
-482
-00:17:20,319 --> 00:17:24,799
-do an r command install r command build
-
-483
-00:17:22,799 --> 00:17:26,959
-and r command check
-
-484
-00:17:24,799 --> 00:17:29,120
-if the package installs builds and
-
-485
-00:17:26,959 --> 00:17:31,039
-checks cleanly and has a valid version
-
-486
-00:17:29,120 --> 00:17:32,960
-bump for changes the package is
-
-487
-00:17:31,039 --> 00:17:35,600
-propagated and becomes available through
-
-488
-00:17:32,960 --> 00:17:37,440
-the bioc manager install function
-
-489
-00:17:35,600 --> 00:17:39,360
-maintainers can find the build reports
-
-490
-00:17:37,440 --> 00:17:42,080
-from the main website in the lower right
-
-491
-00:17:39,360 --> 00:17:44,080
-corner marked build reports this page
-
-492
-00:17:42,080 --> 00:17:45,120
-indicates how frequently the builds take
-
-493
-00:17:44,080 --> 00:17:47,360
-place
-
-494
-00:17:45,120 --> 00:17:49,440
-if we click on browse for any of the
-
-495
-00:17:47,360 --> 00:17:52,080
-build reports you'll get a list of every
-
-496
-00:17:49,440 --> 00:17:54,480
-bioconductor package and the status
-
-497
-00:17:52,080 --> 00:17:56,480
-through each stage the top of the page
-
-498
-00:17:54,480 --> 00:17:58,640
-has a time stamp to indicate when it was
-
-499
-00:17:56,480 --> 00:18:01,200
-generated and each package has
-
-500
-00:17:58,640 --> 00:18:03,200
-information on the version git commit
-
-501
-00:18:01,200 --> 00:18:04,559
-and get date that the builder used for
-
-502
-00:18:03,200 --> 00:18:06,640
-that report
-
-503
-00:18:04,559 --> 00:18:09,840
-you can click on any stage indicator for
-
-504
-00:18:06,640 --> 00:18:11,600
-more information and results
-
-505
-00:18:09,840 --> 00:18:14,160
-so what infrastructure is needed for
-
-506
-00:18:11,600 --> 00:18:15,600
-everything just discussed for submitting
-
-507
-00:18:14,160 --> 00:18:17,919
-a package
-
-508
-00:18:15,600 --> 00:18:19,679
-well there's evaluating and updating of
-
-509
-00:18:17,919 --> 00:18:21,600
-the package guidelines
-
-510
-00:18:19,679 --> 00:18:24,000
-there's the code that interacts with the
-
-511
-00:18:21,600 --> 00:18:25,840
-package submission process on github and
-
-512
-00:18:24,000 --> 00:18:27,520
-code specific to the new submission
-
-513
-00:18:25,840 --> 00:18:28,960
-process on each of the three develop
-
-514
-00:18:27,520 --> 00:18:30,640
-builders
-
-515
-00:18:28,960 --> 00:18:32,320
-the core team also participates
-
-516
-00:18:30,640 --> 00:18:34,480
-currently in package reviews for new
-
-517
-00:18:32,320 --> 00:18:36,320
-submissions
-
-518
-00:18:34,480 --> 00:18:38,720
-there is facilitating the entire
-
-519
-00:18:36,320 --> 00:18:40,840
-bioconductor get ecosystem which
-
-520
-00:18:38,720 --> 00:18:42,960
-includes the
-
-521
-00:18:40,840 --> 00:18:44,799
-get.bioconductor.org main repository
-
-522
-00:18:42,960 --> 00:18:47,760
-location for all of the bioconductor
-
-523
-00:18:44,799 --> 00:18:51,120
-packages a git contributions app that
-
-524
-00:18:47,760 --> 00:18:53,520
-manages ssh credentials of users
-
-525
-00:18:51,120 --> 00:18:55,360
-get a light application that manages
-
-526
-00:18:53,520 --> 00:18:57,840
-which users have access to which
-
-527
-00:18:55,360 --> 00:18:59,760
-packages and gut hooks that respond to
-
-528
-00:18:57,840 --> 00:19:01,520
-different triggering events
-
-529
-00:18:59,760 --> 00:19:04,480
-there's also the bioconductor build
-
-530
-00:19:01,520 --> 00:19:06,480
-system called the bbs which is a large
-
-531
-00:19:04,480 --> 00:19:08,559
-undertaking of the core team there are
-
-532
-00:19:06,480 --> 00:19:10,640
-minimally six build machines that
-
-533
-00:19:08,559 --> 00:19:13,200
-require system administration and the
-
-534
-00:19:10,640 --> 00:19:15,679
-underlying code base on each to handle
-
-535
-00:19:13,200 --> 00:19:17,919
-the get clone the r command install the
-
-536
-00:19:15,679 --> 00:19:20,000
-r command build the r command check the
-
-537
-00:19:17,919 --> 00:19:21,600
-package propagation and the generation
-
-538
-00:19:20,000 --> 00:19:23,760
-of the build reports
-
-539
-00:19:21,600 --> 00:19:25,440
-and there's minimally six builders
-
-540
-00:19:23,760 --> 00:19:28,000
-because for both the bioconductor
-
-541
-00:19:25,440 --> 00:19:30,640
-release and bioconductor devel branches
-
-542
-00:19:28,000 --> 00:19:34,559
-we cover the three main os platforms of
-
-543
-00:19:30,640 --> 00:19:34,559
-mac linux and windows
-
-544
-00:19:35,280 --> 00:19:39,200
-so briefly i wanted to also touch upon
-
-545
-00:19:37,440 --> 00:19:41,760
-why bioconductor has a release in a
-
-546
-00:19:39,200 --> 00:19:43,520
-devel branch bioconductor is closely
-
-547
-00:19:41,760 --> 00:19:46,320
-associated with r
-
-548
-00:19:43,520 --> 00:19:48,320
-most years in spring r has a release
-
-549
-00:19:46,320 --> 00:19:50,559
-bioconductor then needs to update which
-
-550
-00:19:48,320 --> 00:19:52,160
-version of r is being used for packages
-
-551
-00:19:50,559 --> 00:19:53,520
-to insured continued proper
-
-552
-00:19:52,160 --> 00:19:56,080
-functionality
-
-553
-00:19:53,520 --> 00:19:57,600
-bioconductor has two releases of gear a
-
-554
-00:19:56,080 --> 00:20:00,080
-spring and a fall
-
-555
-00:19:57,600 --> 00:20:01,919
-where the devel branch is released and
-
-556
-00:20:00,080 --> 00:20:05,200
-becomes the new release
-
-557
-00:20:01,919 --> 00:20:07,600
-from roughly late april and early may
-
-558
-00:20:05,200 --> 00:20:09,520
-when the new version of r is released
-
-559
-00:20:07,600 --> 00:20:12,000
-both the bioconductor release and devel
-
-560
-00:20:09,520 --> 00:20:14,559
-branch use that stapled release version
-
-561
-00:20:12,000 --> 00:20:17,200
-of r or our patched version
-
-562
-00:20:14,559 --> 00:20:19,440
-in fall normally late october early
-
-563
-00:20:17,200 --> 00:20:20,400
-november bioconductor does a second
-
-564
-00:20:19,440 --> 00:20:22,559
-release
-
-565
-00:20:20,400 --> 00:20:25,200
-at this time the bioconductor release
-
-566
-00:20:22,559 --> 00:20:27,360
-branch still uses that stable rr patch
-
-567
-00:20:25,200 --> 00:20:29,600
-version but the devel bioconductor
-
-568
-00:20:27,360 --> 00:20:31,600
-branch switches to use r devel in
-
-569
-00:20:29,600 --> 00:20:32,799
-preparation for the next r release in
-
-570
-00:20:31,600 --> 00:20:35,039
-spring
-
-571
-00:20:32,799 --> 00:20:37,919
-having a devel branch allows maintainers
-
-572
-00:20:35,039 --> 00:20:40,159
-to adapt to changes in base r as well as
-
-573
-00:20:37,919 --> 00:20:42,799
-changes in any other dependent packages
-
-574
-00:20:40,159 --> 00:20:45,840
-that they may have and then have minimal
-
-575
-00:20:42,799 --> 00:20:47,440
-disruption or downtime to the end user
-
-576
-00:20:45,840 --> 00:20:49,360
-bioconductor encourage package
-
-577
-00:20:47,440 --> 00:20:51,520
-maintainers to enhance and make major
-
-578
-00:20:49,360 --> 00:20:53,360
-changes on the development branch and
-
-579
-00:20:51,520 --> 00:20:56,159
-restrict changes on the release branch
-
-580
-00:20:53,360 --> 00:20:57,600
-to minor bug corrections again also
-
-581
-00:20:56,159 --> 00:20:59,600
-reasoning that there would be a place
-
-582
-00:20:57,600 --> 00:21:03,120
-for development and potential breakage
-
-583
-00:20:59,600 --> 00:21:04,960
-without affecting the end users
-
-584
-00:21:03,120 --> 00:21:06,559
-the core team is always extremely busy
-
-585
-00:21:04,960 --> 00:21:08,799
-during release time and with release
-
-586
-00:21:06,559 --> 00:21:10,960
-related tasks it involves updating
-
-587
-00:21:08,799 --> 00:21:13,440
-versions of r and bioconductor on
-
-588
-00:21:10,960 --> 00:21:15,120
-minimumly the six builders
-
-589
-00:21:13,440 --> 00:21:16,960
-emailing maintainers that ignored the
-
-590
-00:21:15,120 --> 00:21:19,120
-build failure notifications to try and
-
-591
-00:21:16,960 --> 00:21:21,280
-fix their packages to avoid deprecation
-
-592
-00:21:19,120 --> 00:21:23,360
-and removal from bioconductor
-
-593
-00:21:21,280 --> 00:21:25,760
-reviewing the influx of newly submitted
-
-594
-00:21:23,360 --> 00:21:27,840
-packages for inclusion
-
-595
-00:21:25,760 --> 00:21:30,400
-fixing or modifying any core packages
-
-596
-00:21:27,840 --> 00:21:33,360
-that require such attention adding
-
-597
-00:21:30,400 --> 00:21:35,320
-release related annotation resources
-
-598
-00:21:33,360 --> 00:21:37,039
-creating new branches on
-
-599
-00:21:35,320 --> 00:21:39,039
-get.bioconductor.org for all the
-
-600
-00:21:37,039 --> 00:21:41,120
-packages for the new release
-
-601
-00:21:39,039 --> 00:21:42,799
-and collating all the news files from
-
-602
-00:21:41,120 --> 00:21:45,280
-packages to generate the release
-
-603
-00:21:42,799 --> 00:21:47,200
-announcement
-
-604
-00:21:45,280 --> 00:21:49,039
-there is another key infrastructure
-
-605
-00:21:47,200 --> 00:21:51,120
-piece that the core team maintains that
-
-606
-00:21:49,039 --> 00:21:53,280
-has gained increasing popularity in
-
-607
-00:21:51,120 --> 00:21:55,600
-recent years the concept of the
-
-608
-00:21:53,280 --> 00:21:57,039
-bioconductor hubs annotation hub and
-
-609
-00:21:55,600 --> 00:21:59,919
-experiment hub
-
-610
-00:21:57,039 --> 00:22:02,880
-as a brief background git does not allow
-
-611
-00:21:59,919 --> 00:22:05,760
-large files and our current git system
-
-612
-00:22:02,880 --> 00:22:07,600
-does not support get lfs which means
-
-613
-00:22:05,760 --> 00:22:10,240
-there has to be an alternative way to
-
-614
-00:22:07,600 --> 00:22:12,400
-provide large data sets to users
-
-615
-00:22:10,240 --> 00:22:14,880
-bioconductor insists data to be hosted
-
-616
-00:22:12,400 --> 00:22:18,559
-on a secure public or institutional
-
-617
-00:22:14,880 --> 00:22:21,440
-server like zenodo amazon s3 buckets
-
-618
-00:22:18,559 --> 00:22:24,559
-microsoft azure among other trusted
-
-619
-00:22:21,440 --> 00:22:27,679
-sites or direct access to web resources
-
-620
-00:22:24,559 --> 00:22:29,120
-or databases if available like ensemble
-
-621
-00:22:27,679 --> 00:22:31,600
-or ncbi
-
-622
-00:22:29,120 --> 00:22:34,159
-rather than privately hosting data on
-
-623
-00:22:31,600 --> 00:22:35,760
-say a github or dropbox
-
-624
-00:22:34,159 --> 00:22:37,600
-if you're developing a package we
-
-625
-00:22:35,760 --> 00:22:39,760
-encourage a discussion about data
-
-626
-00:22:37,600 --> 00:22:41,120
-hosting on other platforms on the
-
-627
-00:22:39,760 --> 00:22:43,480
-bioslee
-
-628
-00:22:41,120 --> 00:22:46,799
-dash devel
-
-629
-00:22:43,480 --> 00:22:48,799
-r-projects.org developers mailing list
-
-630
-00:22:46,799 --> 00:22:51,760
-if a maintainer does not have access to
-
-631
-00:22:48,799 --> 00:22:54,400
-such a resource bioconductor provides an
-
-632
-00:22:51,760 --> 00:22:56,960
-amazon s3 bucket for use
-
-633
-00:22:54,400 --> 00:23:00,320
-we are however actively investigating a
-
-634
-00:22:56,960 --> 00:23:02,480
-migration of location from amazon s3 to
-
-635
-00:23:00,320 --> 00:23:04,400
-microsoft azure
-
-636
-00:23:02,480 --> 00:23:06,720
-developers can download resources
-
-637
-00:23:04,400 --> 00:23:09,200
-directly from the trusted sites
-
-638
-00:23:06,720 --> 00:23:11,120
-but must implement a caching mechanism
-
-639
-00:23:09,200 --> 00:23:13,600
-in the background and we highly
-
-640
-00:23:11,120 --> 00:23:15,919
-recommend the bioconductor core package
-
-641
-00:23:13,600 --> 00:23:17,760
-bioc file cache
-
-642
-00:23:15,919 --> 00:23:20,080
-the other alternative to downloading
-
-643
-00:23:17,760 --> 00:23:22,159
-directly and implementing bios you file
-
-644
-00:23:20,080 --> 00:23:24,720
-cache is to list the data in the
-
-645
-00:23:22,159 --> 00:23:26,640
-annotation hub or experiment hub
-
-646
-00:23:24,720 --> 00:23:28,880
-the annotation hub and the experiment
-
-647
-00:23:26,640 --> 00:23:30,960
-hub are databases with references to the
-
-648
-00:23:28,880 --> 00:23:33,440
-external data for download
-
-649
-00:23:30,960 --> 00:23:35,840
-the hub interfaces provide a querying
-
-650
-00:23:33,440 --> 00:23:38,720
-mechanism on metadata provided at
-
-651
-00:23:35,840 --> 00:23:40,320
-inclusion of the data into the database
-
-652
-00:23:38,720 --> 00:23:43,279
-when using the hub interface for
-
-653
-00:23:40,320 --> 00:23:45,600
-download it already uses bioc file cache
-
-654
-00:23:43,279 --> 00:23:48,320
-as a caching mechanism so a maintainer
-
-655
-00:23:45,600 --> 00:23:50,320
-does not have to implement it themselves
-
-656
-00:23:48,320 --> 00:23:52,320
-the other advantage to listing the data
-
-657
-00:23:50,320 --> 00:23:54,960
-in the hubs is the findability of
-
-658
-00:23:52,320 --> 00:23:57,120
-resources outside of r or outside the
-
-659
-00:23:54,960 --> 00:23:58,640
-use of the associated bioconductor
-
-660
-00:23:57,120 --> 00:24:00,480
-package
-
-661
-00:23:58,640 --> 00:24:02,720
-there are bioconductor core packages
-
-662
-00:24:00,480 --> 00:24:04,400
-experiment hub and annotation hub that
-
-663
-00:24:02,720 --> 00:24:06,480
-can be queried for data of different
-
-664
-00:24:04,400 --> 00:24:08,400
-types or from different sources
-
-665
-00:24:06,480 --> 00:24:10,799
-the resources can be searched either
-
-666
-00:24:08,400 --> 00:24:14,600
-through a query performed within r or
-
-667
-00:24:10,799 --> 00:24:16,159
-investigation through the hub apis and
-
-668
-00:24:14,600 --> 00:24:19,120
-annotationhub.bioconductor.org or
-
-669
-00:24:16,159 --> 00:24:21,679
-experimenthub.bioconductor
-
-670
-00:24:19,120 --> 00:24:24,159
-the api is admittedly a little crude and
-
-671
-00:24:21,679 --> 00:24:26,640
-we are working on a revamp there's also
-
-672
-00:24:24,159 --> 00:24:28,240
-a shiny version to query hub resources
-
-673
-00:24:26,640 --> 00:24:29,760
-that has been developed and should be
-
-674
-00:24:28,240 --> 00:24:32,159
-announced soon
-
-675
-00:24:29,760 --> 00:24:34,480
-the query function in r will take a list
-
-676
-00:24:32,159 --> 00:24:37,200
-of terms and return resources matching
-
-677
-00:24:34,480 --> 00:24:41,360
-search criteria for example you can see
-
-678
-00:24:37,200 --> 00:24:44,400
-we queried here for ensembl gtf release
-
-679
-00:24:41,360 --> 00:24:45,520
-103 and homo sapiens which returned four
-
-680
-00:24:44,400 --> 00:24:47,919
-results
-
-681
-00:24:45,520 --> 00:24:50,080
-a single bracket using the ahid of
-
-682
-00:24:47,919 --> 00:24:52,480
-interest will give more information on
-
-683
-00:24:50,080 --> 00:24:55,520
-the resource and a double bracket will
-
-684
-00:24:52,480 --> 00:24:57,840
-download and cache the resource
-
-685
-00:24:55,520 --> 00:25:00,240
-the requirement to add data to the hubs
-
-686
-00:24:57,840 --> 00:25:02,640
-is a package that is already or will be
-
-687
-00:25:00,240 --> 00:25:06,240
-submitted to bioconductor that includes
-
-688
-00:25:02,640 --> 00:25:08,240
-an inst metadata.csv file with metadata
-
-689
-00:25:06,240 --> 00:25:09,679
-for the resources that will be added to
-
-690
-00:25:08,240 --> 00:25:12,000
-the database
-
-691
-00:25:09,679 --> 00:25:14,400
-and an in-script directory with files
-
-692
-00:25:12,000 --> 00:25:17,120
-that indicate how the data was generated
-
-693
-00:25:14,400 --> 00:25:19,760
-and relevant source information
-
-694
-00:25:17,120 --> 00:25:22,240
-the vignette creating a hub package
-
-695
-00:25:19,760 --> 00:25:25,279
-experiment hub or annotation hub in the
-
-696
-00:25:22,240 --> 00:25:26,799
-core package hub pub describes this in
-
-697
-00:25:25,279 --> 00:25:28,640
-more detail
-
-698
-00:25:26,799 --> 00:25:31,520
-other questions can be directed to the
-
-699
-00:25:28,640 --> 00:25:33,440
-hubs at bioconductor.org email
-
-700
-00:25:31,520 --> 00:25:35,600
-the hubs currently involve a lot of
-
-701
-00:25:33,440 --> 00:25:37,200
-interaction from the core team we are
-
-702
-00:25:35,600 --> 00:25:39,600
-working on making enhancements and
-
-703
-00:25:37,200 --> 00:25:41,600
-restructure to try to make it simpler
-
-704
-00:25:39,600 --> 00:25:44,799
-and easier to submit and maintain hub
-
-705
-00:25:41,600 --> 00:25:46,720
-data with limited core team interaction
-
-706
-00:25:44,799 --> 00:25:48,960
-currently when data is submitted to the
-
-707
-00:25:46,720 --> 00:25:51,279
-hubs a core team member will evaluate
-
-708
-00:25:48,960 --> 00:25:53,600
-the data and metadata provided
-
-709
-00:25:51,279 --> 00:25:56,159
-if needed assist with uploading data to
-
-710
-00:25:53,600 --> 00:25:58,480
-the bioconductor provided location again
-
-711
-00:25:56,159 --> 00:26:00,159
-currently that's an amazon s3 bucket but
-
-712
-00:25:58,480 --> 00:26:02,320
-that could change
-
-713
-00:26:00,159 --> 00:26:04,640
-and update the database for the metadata
-
-714
-00:26:02,320 --> 00:26:06,880
-provided so the metadata is available
-
-715
-00:26:04,640 --> 00:26:09,279
-through the query functions
-
-716
-00:26:06,880 --> 00:26:12,000
-additionally core team maintenance of
-
-717
-00:26:09,279 --> 00:26:15,039
-the hubs includes managing server code
-
-718
-00:26:12,000 --> 00:26:18,159
-on the amazon web service ec2 instances
-
-719
-00:26:15,039 --> 00:26:20,799
-that hosts the website and api endpoints
-
-720
-00:26:18,159 --> 00:26:22,840
-for both hubs and general core package
-
-721
-00:26:20,799 --> 00:26:26,159
-maintenance of the relevant core
-
-722
-00:26:22,840 --> 00:26:28,960
-packages experiment hub annotation hub
-
-723
-00:26:26,159 --> 00:26:32,880
-bioc file cache experiment hub data
-
-724
-00:26:28,960 --> 00:26:34,880
-annotation hub data and hubpub
-
-725
-00:26:32,880 --> 00:26:36,480
-so there are still other core related
-
-726
-00:26:34,880 --> 00:26:38,720
-tasks and infrastructure that we just
-
-727
-00:26:36,480 --> 00:26:40,880
-haven't had time to touch on things like
-
-728
-00:26:38,720 --> 00:26:43,919
-the amazon web service resources that we
-
-729
-00:26:40,880 --> 00:26:45,279
-utilize and the microsoft azure project
-
-730
-00:26:43,919 --> 00:26:46,240
-resources
-
-731
-00:26:45,279 --> 00:26:48,720
-but
-
-732
-00:26:46,240 --> 00:26:50,480
-hopefully this gave everyone an idea of
-
-733
-00:26:48,720 --> 00:26:52,559
-how much the core team supports in
-
-734
-00:26:50,480 --> 00:26:55,840
-addition to just general core package
-
-735
-00:26:52,559 --> 00:26:57,600
-health and development
-
-736
-00:26:55,840 --> 00:26:59,440
-so with that i would like to thank the
-
-737
-00:26:57,600 --> 00:27:01,600
-conference organizers for inviting me to
-
-738
-00:26:59,440 --> 00:27:04,000
-speak it really has been an honor and
-
-739
-00:27:01,600 --> 00:27:06,400
-thank you to my fellow core team members
-
-740
-00:27:04,000 --> 00:27:08,159
-i appreciate all the work and effort we
-
-741
-00:27:06,400 --> 00:27:09,200
-all put into keeping the project moving
-
-742
-00:27:08,159 --> 00:27:11,279
-forward
-
-743
-00:27:09,200 --> 00:27:13,520
-and most of all a thank you to the
-
-744
-00:27:11,279 --> 00:27:15,279
-bioconductor community bioconductor
-
-745
-00:27:13,520 --> 00:27:17,679
-would not be successful without the
-
-746
-00:27:15,279 --> 00:27:20,159
-contributions of all of you and whether
-
-747
-00:27:17,679 --> 00:27:22,000
-you're a first time user or a long-time
-
-748
-00:27:20,159 --> 00:27:25,200
-contributor we really hope that you
-
-749
-00:27:22,000 --> 00:27:27,279
-found a welcoming and helpful community
-
-750
-00:27:25,200 --> 00:27:29,840
-so please feel free to send me any
-
-751
-00:27:27,279 --> 00:27:32,159
-questions to my email or on the
-
-752
-00:27:29,840 --> 00:27:34,480
-community slack if anyone has any
-
-753
-00:27:32,159 --> 00:27:38,120
-questions about this presentation
-
-754
-00:27:34,480 --> 00:27:38,120
-thank you cheers
-
-755
-00:28:59,760 --> 00:29:01,840
+00:28:59,760 --> 00:29:00,260
 you
 
